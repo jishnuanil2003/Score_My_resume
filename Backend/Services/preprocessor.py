@@ -14,8 +14,7 @@ def preprocessing_pipeline(file_path):
 
     for section_name, section_content in sections.items():
 
-        # Convert list into single string
-        text = " ".join(section_content)
+        text = section_content
 
         doc = nlp(text.lower())
 
